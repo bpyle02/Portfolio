@@ -13,6 +13,11 @@ module.exports = {
         'linkedin': '#0077B5',
         'twitter': '#1DA1F2'
       },
+      colors: {
+        zinc: {
+          950: '#121214'
+        }
+      }
     },
   },
   plugins: [],

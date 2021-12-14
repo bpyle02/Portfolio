@@ -11,7 +11,7 @@ function Home()
 {
     return (
         <div>
-            <div className = 'min-h-screen py-10 px-3 sm:px-5 bg-gray-100 dark:bg-black'>
+            <div className = 'min-h-screen py-10 px-3 sm:px-5 bg-gray-100 dark:bg-zinc-900'>
               <div data-aos = "fade-down" data-aos-duration = "800">
                 <Card />
               </div>

@@ -5,13 +5,13 @@ import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-
 function Footer()
 {
     return (
-        <div className = "py-5 border-t-3/2">
+        <div className = "pt-5 border-t-3/2">
             <div className = "flex justify-center mt-4">
-            <a className = "text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-300 rounded-full" href = "https://www.github.com/bpyle02">
+            <a className = "text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors duration-300 rounded-full" href = "https://www.github.com/bpyle02">
                 <FaGithub />
                 <span className = "sr-only">Github</span>
             </a>
-            <a className = "text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-300 rounded-full" href = "https://www.instagram.com/b.pyle02">
+            <a className = "text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors duration-300 rounded-full" href = "https://www.instagram.com/b.pyle02">
                 <FaInstagram />
                 <span className = "sr-only">Instagram</span>
             </a>
@@ -19,7 +19,7 @@ function Footer()
                 <FaTwitter />
                 <span className = "sr-only">Twitter</span>
             </a>
-            <a className = "text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-300 rounded-full" href = "mailto:mail4brando@gmail.com">
+            <a className = "text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors duration-300 rounded-full" href = "mailto:mail4brando@gmail.com">
                 <FaEnvelope />
                 <span className = "sr-only">Email</span>
             </a>
@@ -29,7 +29,7 @@ function Footer()
             </a>
             </div>
             <div className = "flex justify-center mt-4">
-                <p className = "mb-4 text-black dark:text-gray-400">Created by Brandon Pyle using React + Tailwind</p>
+                <p className = "text-black dark:text-gray-400">Created by Brandon Pyle using React + Tailwind</p>
             </div>
         </div>
     )

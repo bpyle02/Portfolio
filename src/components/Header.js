@@ -6,12 +6,12 @@ import useDarkMode from "../hooks/useDarkMode";
 function Header()
 {
     return (
-        <div className = "flex items-end p-3 flex-wrap bg-gray-100 dark:bg-black">
+        <div className = "flex items-end p-3 flex-wrap bg-gray-100 dark:bg-zinc-900">
             <div className = "w-auto inline-flex ml-auto flex-row items-center content-between">
-                <div className = "text-2xl px-3 py-2 mr-4 bg-gray-100 dark:bg-black rounded hover:bg-gray-200 dark:hover:bg-gray-900 duration-300 transition-colors">
+                <div className = "text-2xl px-3 py-2 mr-4 bg-gray-100 dark:bg-zinc-900 rounded hover:bg-gray-200 dark:hover:bg-zinc-800 duration-300 transition-colors">
                   <ThemeIcon />
                 </div>
-                <a className = "p-2 mr-4 inline-flex px-3 py-2 rounded bg-gray-100 dark:bg-black dark:text-white font-bold hover:bg-gray-200 dark:hover:bg-gray-900 duration-300 transition-colors" href = "blog">Blog</a>
+                <a className = "p-2 mr-4 inline-flex px-3 py-2 rounded bg-gray-100 dark:bg-zinc-900 dark:text-white font-bold hover:bg-gray-200 dark:hover:bg-zinc-800 duration-300 transition-colors" href = "blog">Blog</a>
             </div>
         </div>
     )
