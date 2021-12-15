@@ -6,7 +6,6 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 import Home from "./components/Home";
-import Header from "./components/Header";
 import Blog from "./components/Blog/Blog";
 
 function App()
