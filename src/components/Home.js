@@ -2,7 +2,7 @@ import React from "react";
 
 import Card from "./Card";
 import About from "./About";
-import Skills from "./Skills";
+import Header from "./Header";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -11,6 +11,7 @@ function Home()
 {
     return (
         <div>
+            <Header />
             <div className = 'min-h-screen py-10 px-3 sm:px-5 bg-gray-100 dark:bg-zinc-900'>
               <div data-aos = "fade-down" data-aos-duration = "800">
                 <Card />

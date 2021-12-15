@@ -23,9 +23,9 @@ const ThemeIcon = () => {
     return (
       <span onClick={handleMode}>
         {darkTheme ? (
-          <FaSun className='dark:text-white' />
+          <FaSun className='dark:text-white cursor-pointer' />
         ) : (
-          <FaMoon className='dark:text-white' />
+          <FaMoon className='dark:text-white cursor-pointer' />
         )}
       </span>
     );
