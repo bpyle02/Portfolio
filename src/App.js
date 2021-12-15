@@ -7,6 +7,8 @@ import 'aos/dist/aos.css';
 
 import Home from "./components/Home";
 import Blog from "./components/Blog/Blog";
+import SinglePost from "./components/Blog/SinglePost";
+import Error from "./components/Error";
 
 function App()
 {
@@ -20,6 +22,8 @@ function App()
         <Routes>
           <Route exact path = "/" element = {<Home />} />
           <Route exact path = "/blog" element = {<Blog />} />
+          <Route exact path = "/blog/:slug" element = {<SinglePost />} />
+          <Route exact path = "*" element = {<Error />} />
         </Routes>
       </div>
   );
