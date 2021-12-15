@@ -12,8 +12,7 @@ function About()
                 in C++, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, React, Angular, NextJS, and more.
                 I love programming apps, games, and websites just like this one. I am currently interested in
                 a career as a software or web developer.</p>
-
-            <ScrollIntoView selector = "#tech">
+            <ScrollIntoView selector = "#projects">
                 <div className = "mx-auto p-20">
                     <FaChevronDown className = "animate-bounce mx-auto text-3xl text-blue-500" />
                 </div>

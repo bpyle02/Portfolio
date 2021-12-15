@@ -18,7 +18,7 @@ function Home()
               <div data-aos = "fade-up" data-aos-duration = "800" data-aos-delay = "400">
                 <About />
               </div>
-              <Skills />
+              {/* <Skills /> */}
               <Projects />
               <Contact />
               <Footer />

@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-// import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Aos from "aos";
 import 'aos/dist/aos.css';
@@ -19,11 +19,10 @@ function App()
   return (
       <div>
         <Header />
-        {/* <Routes>
+        <Routes>
           <Route exact path = "/" element = {<Home />} />
           <Route exact path = "/blog" element = {<Blog />} />
-        </Routes> */}
-        <Home />
+        </Routes>
       </div>
   );
 }

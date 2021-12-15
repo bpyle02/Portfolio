@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .button {
+        @apply p-2 mr-4 inline-flex px-3 py-2 rounded bg-gray-100 hover:bg-gray-200 dark:hover:bg-zinc-800 dark:bg-zinc-950 dark:text-white font-semibold duration-300 transition-colors
+    }
+
+    .button-main {
+        @apply button bg-white hover:bg-gray-100 dark:bg-zinc-950
+    }
+}
