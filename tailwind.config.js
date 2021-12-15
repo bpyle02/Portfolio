@@ -19,6 +19,9 @@ module.exports = {
         }
       }
     },
+    screens: {
+      
+    }
   },
   plugins: [],
 }
