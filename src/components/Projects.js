@@ -8,8 +8,8 @@ function Projects()
         <div className="min-h-screen" id = "projects">
             <p className = "text-center text-2xl text-black dark:text-gray-100 sm:text-4xl pt-32 pb-20 font-bold">Projects</p>
             <div className = "flex items-center justify-center">
-                <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10 mx-16">
-                    <div className="rounded-xl max-w-sm bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
+                <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-10 mx-16">
+                    <div className="rounded-xl max-w-sm  bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
                         <img src = {rpiGameConsole} className = "object-fill object-center rounded-t-xl" />
                         <div className = "p-6 dark:text-gray-100">
                             <h2 className = "text-base font-medium mb-1">August 13, 2021</h2>
@@ -21,7 +21,7 @@ function Projects()
                              </div>
                          </div>
                     </div>
-                    <div className="rounded-xl max-w-sm bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
+                    <div className="rounded-xl max-w-sm  bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
                         <img src = {portfolio} className = "object-fill object-center rounded-t-xl" />
                         <div className = "p-6 dark:text-gray-100">
                             <h2 className = "text-base font-medium mb-1">December 7, 2021</h2>
@@ -33,7 +33,7 @@ function Projects()
                             </div>
                          </div>
                     </div>
-                    <div className="rounded-xl max-w-sm bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
+                    <div className="rounded-xl max-w-sm  bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
                         <img src = "https://picsum.photos/id/188/720/400" className = "object-fill object-center rounded-t-xl" />
                         <div className = "p-6 dark:text-gray-100">
                             <h2 className = "text-base font-medium mb-1">December 7, 2021</h2>
