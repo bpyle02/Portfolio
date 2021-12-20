@@ -5,11 +5,14 @@ import Footer from "../Footer";
 import Header from "./Header";
 
 import client from "../../client"
+import BlockContent from "@sanity/block-content-to-react";
+
 import { Link } from "react-router-dom";
 
 const Blog = () =>
 {
     const [posts, setPosts] = useState([])
+    const [categories, setCategory] = useState([])
 
     useEffect(() => {
         client
@@ -24,10 +27,22 @@ const Blog = () =>
                 url
             },
             alt
-            }
+            },
+            publishedAt
         }`
         )
         .then((data) => setPosts(data))
+        .catch(console.error)
+    }, [])
+
+    useEffect(() => {
+        client
+        .fetch(
+            `*[_type == "category"] {
+            title,
+        }`
+        )
+        .then((data) => setCategory(data))
         .catch(console.error)
     }, [])
 
@@ -35,24 +50,37 @@ const Blog = () =>
         <div className = "bg-gray-100 dark:bg-zinc-900">
             <Header />
             <div className = "" >
-                <p className = "text-2xl text-black dark:text-gray-100 sm:text-4xl font-bold text-center pt-32">Welcome to My Blog!</p>
+                <p className = "title pt-32">Welcome to My Blog!</p>
                 <div className = "flex items-center justify-center mt-16">
                     <div className = "grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-10 mx-16">
                     {posts.map((post) => (
                         <article key={post.slug.current} className = "rounded-xl max-w-sm  bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
                             <img src={post.mainImage.asset.url} alt={post.title} className = "object-fill object-center rounded-t-xl" />
-                            <h4 className="text-2xl font-semibold mb-3 p-6 dark:text-gray-100">{post.title}</h4>
-                            <div className = "flex align-center justify-center font-semibold dark:text-gray-100">
-                                <button className="button-main items-center m-6 dark:text-gray-100">
-                                    <Link to={`/blog/${post.slug.current}`} className = "">Read Full Article</Link>
-                                </button>
+                            <div className = "p-6">
+                                <p className = "text-2xl font-semibold mb-3 dark:text-gray-100">{post.title}</p>
+                                <div className = "paragraph" class = "preview">
+                                    <BlockContent blocks={post.body} projectId="2hp9gld0" dataset="production" />
+                                </div>
+                                <p className = "mt-3 mb-1 font-semibold">Tags:</p>
+                                {categories.map((category) => (
+                                    <div className = "float-left">                                    
+                                        <p className = "px-2 mr-4 inline-flex py-2 rounded hover:bg-white bg-gray-100 dark:hover:bg-zinc-950 dark:bg-zinc-800 dark:text-white duration-300 transition-colors cursor-pointer">{category.title}</p>
+                                    </div>
+                                ))}
+                                <div className = "font-semibold dark:text-gray-100 inline-flex">
+                                    <button className="button-main items-center my-6 dark:text-gray-100">
+                                        <Link to = {`/blog/${post.slug.current}`} className = "">Read Full Article</Link>
+                                    </button>
+                                </div>
                             </div>
                         </article>
                     ))}
                     </div>
                 </div>
             </div>
-            <Footer />
+            <div className = "pb-10 bg-gray-100 dark:bg-zinc-900">
+                <Footer />
+            </div>
         </div>
     )
 }

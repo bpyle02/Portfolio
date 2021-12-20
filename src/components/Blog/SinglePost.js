@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import client from "../../client";
+import BlockContent from "@sanity/block-content-to-react";
+import Header from "../Header";
 
 export default function SinglePost() {
     const [singlePost, setSinglePost] = useState([])
@@ -27,23 +29,22 @@ export default function SinglePost() {
     }, [slug])
 
     return (
-        <div>
+        <div className = "bg-gray-100 dark:bg-zinc-900">
+            <Header />
             {isLoading ? ( <h1>Loading...</h1> ) : (
-                <section className = "p-5 xl:max-w-6xl xl:mx-auto pb-20">
-                    {singlePost.mainImage && singlePost.mainImage.asset && (
-                        <img src = {singlePost.mainImage.asset.url} alt = {singlePost.title} title = {singlePost.title} className = "rounded-xl" />
-                    )}
-                    <h1 className = "font-bold text-2xl mb-10 md:text-6xl lg:text-4xl text-center mt-5">{singlePost.title}</h1>
-                    <p>By Brandon Pyle</p>
-                    {/* <div className="">
-                        <BlockContent
-                        blocks={singlePost.body}
-                        projectId="2hp9gld0"
-                        dataset="production"
-                        />
-                    </div> */}
+                <section className = "p-5 pb-20 lg:mx-28 md:mx-16 sm:mx-8">
+                    <h1 className = "title">{singlePost.title}</h1>
+                    <div className = "flex items-center justify-center">
+                        {singlePost.mainImage && singlePost.mainImage.asset && (
+                            <img src = {singlePost.mainImage.asset.url} alt = {singlePost.title} title = {singlePost.title} className = "rounded-xl shadow-xl dark:shadow-gray-100/10" />
+                            )}
+                    </div>
+                    <p className = "paragraph mt-5 mb-5">By Brandon Pyle</p>
+                    <div className="paragraph">
+                        <BlockContent blocks={singlePost.body} projectId="2hp9gld0" dataset="production" />
+                    </div>
                     <button>
-                        <Link to = "/blog">Read more articles</Link>
+                        <Link to = "/blog" className = "button">Read more articles</Link>
                     </button>
                 </section>
             )}

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { FaSun, FaMoon } from "react-icons/fa"
+import { Link } from "react-router-dom";
 import useDarkMode from "../hooks/useDarkMode";
 
 function Header()
@@ -11,7 +12,9 @@ function Header()
                 <div className = "text-2xl button">
                   <ThemeIcon />
                 </div>
-                <a className = "button" href = "blog">Blog</a>
+                <button>
+                  <Link to = "/blog" className = "button">Blog</Link>
+                </button>
             </div>
         </div>
     )
