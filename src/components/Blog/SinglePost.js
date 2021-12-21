@@ -33,7 +33,7 @@ export default function SinglePost() {
             <Header />
             {isLoading ? ( <h1>Loading...</h1> ) : (
                 <section className = "p-5 pb-20 lg:mx-28 md:mx-16 sm:mx-8">
-                    <h1 className = "title">{singlePost.title}</h1>
+                    <h1 className = "title mb-20">{singlePost.title}</h1>
                     <div className = "flex items-center justify-center">
                         {singlePost.mainImage && singlePost.mainImage.asset && (
                             <img src = {singlePost.mainImage.asset.url} alt = {singlePost.title} title = {singlePost.title} className = "rounded-xl shadow-xl dark:shadow-gray-100/10" />
