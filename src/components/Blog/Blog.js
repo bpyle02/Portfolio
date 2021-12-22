@@ -13,23 +13,22 @@ const Blog = () =>
 {
     const [posts, setPosts] = useState([])
     const [categories, setCategory] = useState([])
+    const [categorySort, setCategorySort] = useState([])
 
     useEffect(() => {
-        client
-        .fetch(
+        client.fetch(
             `*[_type == "post"] {
-            title,
-            slug,
-            body,
-            mainImage {
-            asset -> {
-                _id,
-                url
-            },
-            alt
-            },
-            publishedAt
-        }`
+                title,
+                slug,
+                body,
+                mainImage {
+                    asset -> {
+                        _id,
+                        url
+                    },
+                    alt
+                }
+            }`
         )
         .then((data) => setPosts(data))
         .catch(console.error)
@@ -61,17 +60,14 @@ const Blog = () =>
                                 <div className = "paragraph" class = "preview">
                                     <BlockContent blocks={post.body} projectId="2hp9gld0" dataset="production" />
                                 </div>
-                                <p className = "mt-3 mb-1 font-semibold">Tags:</p>
+                                <button className="button-main items-center mt-2 dark:text-gray-100 block">
+                                    <Link to = {`/blog/${post.slug.current}`} className = "">Read Full Article</Link>
+                                </button>
                                 {categories.map((category) => (
-                                    <div className = "float-left">                                    
-                                        <p className = "px-2 mr-4 inline-flex py-2 rounded hover:bg-white bg-gray-100 dark:hover:bg-zinc-950 dark:bg-zinc-800 dark:text-white duration-300 transition-colors cursor-pointer">{category.title}</p>
+                                    <div className = "inline-block">                                    
+                                        <p className = "px-2 py-1 inline-flex my-2 mr-2 rounded-2xl hover:bg-white bg-gray-100 dark:hover:bg-zinc-950 dark:bg-zinc-800 dark:text-white duration-300 transition-colors cursor-pointer">{category.title}</p>
                                     </div>
                                 ))}
-                                <div className = "font-semibold dark:text-gray-100 inline-flex">
-                                    <button className="button-main items-center my-6 dark:text-gray-100">
-                                        <Link to = {`/blog/${post.slug.current}`} className = "">Read Full Article</Link>
-                                    </button>
-                                </div>
                             </div>
                         </article>
                     ))}

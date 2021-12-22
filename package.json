@@ -1,8 +1,7 @@
 {
   "name": "portfolio",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "private": true,
-  "homepage": "https://bpyle02.github.io/portfolio",
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.0",
     "@sanity/block-content-to-react": "^3.0.0",
