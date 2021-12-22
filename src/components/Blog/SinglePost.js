@@ -51,7 +51,7 @@ export default function SinglePost() {
                     </div>
                     <p className = "paragraph mt-5 mb-5">By Brandon Pyle</p>
                     <div className="">
-                        <BlockContent blocks={singlePost.body} projectId="2hp9gld0" dataset="production" />
+                        <BlockContent serializers={serializers} blocks={singlePost.body} projectId="2hp9gld0" dataset="production" />
                     </div>
                     <button>
                         <Link to = "/blog" className = "button">Read more articles</Link>
