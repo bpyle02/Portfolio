@@ -13,8 +13,7 @@ const Blog = () =>
 {
     const [posts, setPosts] = useState([])
     const [categories, setCategory] = useState([])
-    const [categorySort, setCategorySort] = useState([])
-
+    
     useEffect(() => {
         client.fetch(
             `*[_type == "post"] {

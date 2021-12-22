@@ -1,6 +1,6 @@
 import React from "react";
 import profile from "../images/memoji.PNG"
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
 
 function Card()
 {
@@ -8,7 +8,7 @@ function Card()
         <div className = "w-full">
             <div className = "flex flex-col justify-center max-w-xs mx-auto bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10 rounded-xl p-5">
                 <div className = "">
-                    <img className = "w-32 mx-auto shadow-xl rounded-full drop-shadow-sm dark:shadow-gray-100/10" src = {profile} alt = "profile photo"></img>
+                    <img className = "w-32 mx-auto shadow-xl rounded-full drop-shadow-sm dark:shadow-gray-100/10" src = {profile} alt = ""/>
                 </div>
                 <div className = "text-center mt-5">
                     <p className = "text-xl sm:text-2xl text-gray-900 dark:text-gray-100 font-bold">Brandon Pyle</p>
