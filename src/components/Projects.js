@@ -42,7 +42,7 @@ function Projects()
                             <p className = "text-base font-medium mb-1">{new Date(project.date).toLocaleDateString()}</p>
                             <p className = "text-2xl font-semibold mb-3 dark:text-gray-100">{project.title}</p>
                             {/* <p className = "text-base font-medium mb-1">{project.projectType} Project</p> */}
-                            <p className = "leading-relaxed mb-3">{project.description}</p>
+                            <p className = "leading-relaxed mb-3 dark:text-gray-100">{project.description}</p>
                             <div className = "flex align-center justify-center font-semibold dark:text-gray-100">
                                 <a href = {project.code} className = "button-main items-center">Code</a>
                                 <a href = {project.demo} className = "button-main items-center">Live Demo</a>

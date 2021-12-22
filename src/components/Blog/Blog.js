@@ -56,7 +56,7 @@ const Blog = () =>
                             <img src={post.mainImage.asset.url} alt={post.title} className = "object-fill object-center rounded-t-xl" />
                             <div className = "p-6">
                                 <p className = "text-2xl font-semibold mb-3 dark:text-gray-100">{post.title}</p>
-                                <div className = "paragraph" class = "preview">
+                                <div class = "preview">
                                     <BlockContent blocks={post.body} projectId="2hp9gld0" dataset="production" />
                                 </div>
                                 <button className="button-main items-center mt-2 dark:text-gray-100 block">
