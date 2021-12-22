@@ -7,10 +7,10 @@ This project was heavily inspired by the following tutorials:
 - https://youtu.be/pfaSUYaSgRo
 - https://youtu.be/unRzk7z0clE
 
-## Current Version: 0.2.0
+## Current Version: 0.3.0
 Changelog:
-- Created a new React App with Tailwind 3.0 and merged files to the new project
-- Added white shadows in dark mode
+- Began implemention Sanity as a content management system for my blog posts and projects
+- Added the SinglePost page that displays the blog post the user clicks on in more detail
 
 ### Known Bugs
 - [ ] Links on the projects page direct to the incorrect address
