@@ -28,6 +28,16 @@ export default function SinglePost() {
         setIsLoading(false)
     }, [slug])
 
+    const serializers = {
+        types: {
+          code: (props) => (
+            <pre data-language={props.node.language}>
+              <code>{props.node.code}</code>
+            </pre>
+          ),
+        },
+      }
+
     return (
         <div className = "bg-gray-100 dark:bg-zinc-900">
             <Header />
@@ -40,7 +50,7 @@ export default function SinglePost() {
                             )}
                     </div>
                     <p className = "paragraph mt-5 mb-5">By Brandon Pyle</p>
-                    <div className="paragraph">
+                    <div className="">
                         <BlockContent blocks={singlePost.body} projectId="2hp9gld0" dataset="production" />
                     </div>
                     <button>
