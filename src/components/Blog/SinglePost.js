@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import client from "../../client";
-import PortableText from "@sanity/block-content-to-react";
+import BlockContent from "@sanity/block-content-to-react";
 import Header from "../Header";
 
 export default function SinglePost() {
@@ -58,8 +58,9 @@ export default function SinglePost() {
                             <p className = "font-normal inline-block button cursor-pointer">{category.title}</p>
                             ))}
                     </div>
-                    <div className="dark:text-gray-100">
-                        <PortableText blocks={singlePost.body} />
+                    <div className = "bg-gray-300 h-[1px]"></div>
+                    <div className = "dark:text-gray-100 prose">
+                        <BlockContent blocks = {singlePost.body} projectId = "n5mqzbhc" dataset = "production" />
                     </div>
                     <button>
                         <Link to = "/blog" className = "button mt-2">Read more articles</Link>
