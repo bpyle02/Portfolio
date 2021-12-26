@@ -52,7 +52,7 @@ const Blog = () =>
                 <div className = "flex items-center justify-center mt-16">
                     <div className = "grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-10 mx-16">
                     {posts.map((post) => (
-                        <article key={post.slug.current} className = "rounded-xl max-w-sm  bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
+                        <article key={post.slug.current} className = "rounded-xl max-w-sm bg-white dark:bg-zinc-950 shadow-xl dark:shadow-gray-100/10">
                             <img src={post.mainImage.asset.url} alt={post.title} className = "object-fill object-center rounded-t-xl" />
                             <div className = "p-6">
                                 <p className = "text-2xl font-semibold mb-3 dark:text-gray-100">{post.title}</p>
