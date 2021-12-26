@@ -56,17 +56,17 @@ const Blog = () =>
                             <img src={post.mainImage.asset.url} alt={post.title} className = "object-fill object-center rounded-t-xl" />
                             <div className = "p-6">
                                 <p className = "text-2xl font-semibold mb-3 dark:text-gray-100">{post.title}</p>
+                                {categories.map((category) => (
+                                    <div className = "inline-block">                                    
+                                        <p className = "px-2 inline-flex mb-2 mr-2 rounded-2xl hover:bg-white bg-gray-100 dark:hover:bg-zinc-950 dark:bg-zinc-800 dark:text-white duration-300 transition-colors cursor-pointer">{category.title}</p>
+                                    </div>
+                                ))}
                                 <div class = "preview">
                                     <BlockContent blocks={post.body} projectId="2hp9gld0" dataset="production" />
                                 </div>
                                 <button className="button-main items-center mt-2 dark:text-gray-100 block">
                                     <Link to = {`/blog/${post.slug.current}`} className = "">Read Full Article</Link>
                                 </button>
-                                {categories.map((category) => (
-                                    <div className = "inline-block">                                    
-                                        <p className = "px-2 py-1 inline-flex my-2 mr-2 rounded-2xl hover:bg-white bg-gray-100 dark:hover:bg-zinc-950 dark:bg-zinc-800 dark:text-white duration-300 transition-colors cursor-pointer">{category.title}</p>
-                                    </div>
-                                ))}
                             </div>
                         </article>
                     ))}
