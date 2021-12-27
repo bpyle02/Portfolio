@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../images/memoji.PNG"
+import profile from "../files/memoji.PNG"
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa"
 
 function Card()

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import ScrollIntoView from "react-scroll-into-view";
+import Resume from "../files/Resume 2021-11.pdf";
 
 function About()
 {
@@ -11,7 +12,11 @@ function About()
                 I have been programming since I was 12 years old when I learned VisualBasic. Since then, I have gained experience
                 in C++, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, React, Angular, NextJS, and more.
                 I love programming apps, games, and websites just like this one. I am currently interested in
-                a career as a software or web developer.</p>
+                a career as a software or web developer.
+            </p>
+            <div className = "mt-6 text-center">
+                <a href = {Resume} download className = "button">Download My Resume</a>
+            </div>
             <ScrollIntoView selector = "#projects">
                 <div className = "mx-auto p-20">
                     <FaChevronDown className = "animate-bounce mx-auto text-3xl text-blue-500" />
