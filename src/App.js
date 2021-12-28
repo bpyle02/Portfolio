@@ -9,6 +9,8 @@ import Home from "./components/Home";
 import Blog from "./components/Blog/Blog";
 import SinglePost from "./components/Blog/SinglePost";
 import Error from "./components/Error";
+import PhotoGallery from "./components/Photo Gallery/PhotoGallery";
+import SinglePhoto from "./components/Photo Gallery/SinglePhoto"
 
 function App()
 {
@@ -23,6 +25,8 @@ function App()
           <Route exact path = "/" element = {<Home />} />
           <Route exact path = "/blog" element = {<Blog />} />
           <Route exact path = "/blog/:slug" element = {<SinglePost />} />
+          <Route exact path = "/photos" element = {<PhotoGallery />} />
+          <Route exact path = "/photos/:slug" element = {<SinglePhoto />} />
           <Route exact path = "*" element = {<Error />} />
         </Routes>
       </div>

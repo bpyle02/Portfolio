@@ -15,6 +15,9 @@ function Header()
                 <button>
                   <Link to = "/blog" className = "button">Blog</Link>
                 </button>
+                <button>
+                  <Link to = "/photos" className = "button">Photos</Link>
+                </button>
             </div>
         </div>
     )

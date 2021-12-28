@@ -15,7 +15,7 @@ function About()
                 a career as a software or web developer.
             </p>
             <div className = "mt-6 text-center">
-                <a href = {Resume} download className = "button">Download My Resume</a>
+                <a href = {Resume} download className = "button ml-4">Download My Resume</a>
             </div>
             <ScrollIntoView selector = "#projects">
                 <div className = "mx-auto p-20">
