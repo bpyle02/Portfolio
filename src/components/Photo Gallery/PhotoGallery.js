@@ -109,7 +109,7 @@ const PhotoGallery = () =>
 
 export default PhotoGallery;
 
-//  <p>Categories:</p>
+//      <p>Categories:</p>
 //             {categories.map((category, i) => (
 //                 <div>
 //                     <p onClick = {() => sortPhotoCategories(category)} className = "button">{category.title}</p>
