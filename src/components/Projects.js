@@ -39,7 +39,7 @@ function Projects()
     return (
         <div className="min-h-screen mb-20" id = "projects">
             <p className = "text-center text-2xl text-black dark:text-gray-100 sm:text-4xl pt-32 font-bold">Projects</p>
-            <p className = "text-center font-semibold pb-20 mt-4">Currently showing: {sort} projects</p>
+            <p className = "text-center font-semibold pb-20 mt-4 dark:text-gray-100">Currently showing: {sort} projects</p>
             <div className = "flex items-center justify-center">
                 <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-10 mx-14">
                 {projects.map((project) => (

@@ -39,3 +39,4 @@ Changelog:
 - [x] Add a sort by category feature
 - [ ] Finish blog page with search feature
 - [x] Add a photo gallery page
+- [ ] Add sorting dropdown for Photos page

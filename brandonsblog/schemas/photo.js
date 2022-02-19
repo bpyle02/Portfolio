@@ -32,12 +32,16 @@ export default {
         of: [{type: 'reference', to: {type: 'category'}}],
       },
       {
-        name: 'tags',
+        name: 'photoLocation',
+        title: 'Photo Location',
         type: 'array',
-        of: [{ type: 'string'}],
-        options: {
-            layout: 'tags'
-        }
+        of: [{type: 'reference', to: {type: 'location'}}]
+      },
+      {
+        name: 'cameraModel',
+        title: 'Camera Model',
+        type: 'array',
+        of: [{type: 'reference', to: {type: 'camera'}}]
       },
       {
         name: 'publishedAt',

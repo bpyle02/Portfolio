@@ -56,7 +56,7 @@ export default function SinglePost() {
                         <span className = "font-semibold mr-2 dark:text-gray-100">Tags:</span>
                         {categories.map((category) => (
                             <p className = "font-normal inline-block button cursor-pointer">{category.title}</p>
-                            ))}
+                        ))}
                     </div>
                     <div className = "bg-gray-300 h-[1px]"></div>
                     <div className = "dark:text-gray-100 prose dark:prose-headings:text-gray-100 dark:prose-blockquote:text-gray-100">
