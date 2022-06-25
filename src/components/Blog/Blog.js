@@ -5,12 +5,13 @@ import Footer from "../Footer";
 import Header from "./Header";
 
 import client from "../../client"
-import BlockContent from "@sanity/block-content-to-react";
+//import BlockContent from "@sanity/block-content-to-react";
 
 import { Link } from "react-router-dom";
 
 const Blog = () =>
 {
+    const BlockContent = require('@sanity/block-content-to-react')
     const [posts, setPosts] = useState([])
     const [categories, setCategory] = useState([])
     

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import client from "../../client";
-import BlockContent from "@sanity/block-content-to-react";
+//import BlockContent from "@sanity/block-content-to-react";
 import Header from "../Header";
 
 export default function SinglePost() {
+    const BlockContent = require('@sanity/block-content-to-react')
     const [singlePost, setSinglePost] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const { slug } = useParams()
