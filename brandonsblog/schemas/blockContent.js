@@ -36,6 +36,8 @@ export default {
         decorators: [
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
+          {title: 'Code', value: 'code'},
+          {title: 'Highlight', value: 'highlight'},
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -61,5 +63,8 @@ export default {
       type: 'image',
       options: {hotspot: true},
     },
+    {
+      type: 'code'
+    }
   ],
 }

@@ -13,6 +13,7 @@ function Header()
                   <ThemeIcon />
                 </div>
                 <a className = "button" href = "/">Home</a>
+                <a className = "button" href = "/photos">Photos</a>
             </div>
         </div>
     )

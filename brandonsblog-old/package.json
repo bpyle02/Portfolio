@@ -1,0 +1,36 @@
+{
+  "name": "brandonsblog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Brandon Pyle <mail4brando@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.23.2",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/code-input": "^2.23.2",
+    "@sanity/core": "^2.23.2",
+    "@sanity/default-layout": "^2.23.1",
+    "@sanity/default-login": "^2.23.1",
+    "@sanity/desk-tool": "^2.23.2",
+    "@sanity/vision": "^2.23.1",
+    "prop-types": "^15.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sanity-plugin-markdown": "^2.1.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpyle02/my-portfolio-new.git"
+  }
+}

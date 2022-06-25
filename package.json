@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.3.1",
+  "version": "0.3.5",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.0",
@@ -11,10 +11,12 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "masonry-layout": "^4.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.3.1",
+    "react-masonry-css": "^1.0.16",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.1.1",
     "react-scripts": "5.0.0-next.58",
@@ -48,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
     "gh-pages": "^3.2.3",
     "postcss": "^8.4.4",

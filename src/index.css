@@ -18,6 +18,18 @@
     .paragraph {
         @apply dark:text-gray-100 mb-3 leading-relaxed
     }
+
+    .container-wrapper {
+        @apply relative cursor-pointer mx-2 my-4 transition-opacity duration-500 hover:opacity-60
+    }
+
+    .container-obj {
+        @apply text-center text-lg font-thin text-gray-100 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] opacity-0 transition-opacity duration-500
+    }
+
+    .container-wrapper:hover .container-obj {
+        @apply opacity-100
+    }
 }
 
 .preview {
@@ -27,4 +39,26 @@
     -webkit-line-clamp: 3; /* number of lines to show */
             line-clamp: 3; 
     -webkit-box-orient: vertical;
+}
+
+.preview.dark {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246 / var(--tw-text-opacity));
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+
+.masonry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+}
+
+.masonry-grid-column {
+    background-clip: padding-box;
 }
